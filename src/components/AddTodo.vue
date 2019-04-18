@@ -1,20 +1,15 @@
 <template>
   <div class="card bg-info text-light">
-    <div class="card-body d-flex flex-column align-items-center">
-      <div class="card-title">
-        <h2>Ajouter une tâche à faire</h2>
-      </div>
-      <div class="input-group">
-        <input id="newTodo" type="text" placholder="saisir une activité..." v-model="name">
-        <div class="input-group-append">
-          <button
-            class="btn btn-success"
-            type="button"
-            @click="addTodo()"
-            :disabled="name.length===0"
-          >Ajouter</button>
-        </div>
-      </div>
+    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+      <h2>Ajouter une tâche à faire</h2>
+      <label for="newTodo">Nom de la tâche</label>
+      <input id="newTodo" type="text" placholder="saisir une activité..." v-model="name">
+      <button
+        class="btn btn-success mt-2"
+        type="button"
+        @click="addTodo()"
+        :disabled="name.length===0"
+      >Ajouter</button>
     </div>
   </div>
 </template>
@@ -33,6 +28,7 @@ export default {
         name: this.name,
         checked: false
       });
+      this.name = "";
       input.value = "";
     }
   }
