@@ -1,6 +1,6 @@
 # vuejs-todo-list
 
-This project is part of Aurelien Vernay Solutions Portfolio. Please visit [https://aurelienvernay.github.io] to know more.
+This project is part of Aurelien Vernay Solutions Portfolio. Please visit https://aurelienvernay.github.io to know more.
 
 ## Technical stack
 
