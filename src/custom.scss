@@ -1,0 +1,10 @@
+$enable-gradients: true;
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+.min-width {
+    min-width: 40%;
+}
+.full-width {
+    min-width: 100%;
+}
