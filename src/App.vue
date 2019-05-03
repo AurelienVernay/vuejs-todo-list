@@ -15,24 +15,32 @@
             tâche à faire.</em
         >
         <em>Cochez les cases des tâches que vous avez effectuées.</em>
-        <TodoList
-            :todos="todos"
-            class="my-3"
-            @toggleAll="onToggleAll()"
-            @deleteAll="onDeleteAll()"
-            @deleteTodo="onDeleteTodo($event)"
-        />
-        <AddTodo class="my-3" @addTodo="onAddTodo($event)" />
-        <p class="my-3">
-            Cette page est un exemple de webapp de gestion de listes de tâches à
-            faire
-            <em>(todo)</em>. <br />Cette webapp a été conçue à l'aide du
-            framework <a href="https://vuejs.org/" target="_blank">Vue.js</a> et
-            des framework UI
-            <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> et
-            <a href="https://fontawesome.com" target="_blank">Font Awesome</a>.
-        </p>
+        <div
+            class="d-lg-flex flex-row justify-content-around align-items-center w-100"
+        >
+            <TodoList
+                :todos="todos"
+                class="m-2"
+                @toggleAll="onToggleAll()"
+                @deleteAll="onDeleteAll()"
+                @deleteTodo="onDeleteTodo($event)"
+            />
+            <AddTodo class="m-2" @addTodo="onAddTodo($event)" />
+        </div>
         <footer class="footer mt-auto py-3">
+            <p class="my-3">
+                Cette page est un exemple de webapp de gestion de listes de
+                tâches à faire
+                <em>(todo)</em>. <br />Cette webapp a été conçue à l'aide du
+                framework
+                <a href="https://vuejs.org/" target="_blank">Vue.js</a> et des
+                framework UI
+                <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>
+                et
+                <a href="https://fontawesome.com" target="_blank"
+                    >Font Awesome</a
+                >.
+            </p>
             <div class="container">
                 <img src="./assets/logo-mini.svg" height="32" />
                 <span class="text-muted">
