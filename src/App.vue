@@ -3,7 +3,7 @@
         id="app"
         class="h-100 d-flex flex-column justify-content-between align-items-center"
     >
-        <a href="https://aurelienvernay.github.io">
+        <a href="http://aurelien-vernay-solutions.com">
             <img src="./assets/logo.svg" width="300px" class="mb-3" />
         </a>
         <h1>
@@ -16,23 +16,22 @@
         >
         <em>Cochez les cases des tâches que vous avez effectuées.</em>
         <div
-            class="d-lg-flex flex-row justify-content-around align-items-center w-100"
+            class="mt-2 d-lg-flex flex-row justify-content-around align-items-center align-items-lg-stretch w-100 p-2"
         >
             <TodoList
                 :todos="todos"
-                class="m-2"
                 @toggleAll="onToggleAll()"
                 @deleteAll="onDeleteAll()"
                 @deleteTodo="onDeleteTodo($event)"
             />
-            <AddTodo class="m-2" @addTodo="onAddTodo($event)" />
+            <AddTodo
+                class="mt-2 mt-lg-0 align-self-start"
+                @addTodo="onAddTodo($event)"
+            />
         </div>
         <footer class="footer mt-auto py-3">
             <p class="my-3">
-                Cette page est un exemple de webapp de gestion de listes de
-                tâches à faire
-                <em>(todo)</em>. <br />Cette webapp a été conçue à l'aide du
-                framework
+                Cette application web a été conçue à l'aide du framework
                 <a href="https://vuejs.org/" target="_blank">Vue.js</a> et des
                 framework UI
                 <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>
@@ -45,8 +44,8 @@
                 <img src="./assets/logo-mini.svg" height="32" />
                 <span class="text-muted">
                     2019 - Fait par Aurélien VERNAY (visitez mon
-                    <a href="https://aurelienvernay.github.io">site web</a> pour
-                    en savoir plus)
+                    <a href="http://aurelien-vernay-solutions.com">site web</a>
+                    pour en savoir plus)
                 </span>
             </div>
         </footer>
@@ -77,7 +76,7 @@ export default {
                 },
                 {
                     id: 4,
-                    name: 'Choisir de plus belles couleurs',
+                    name: 'Améliorer le choix des couleurs',
                     checked: false,
                 },
                 { id: 6, name: `Améliorer l'ergonomie `, checked: false },
